@@ -27,4 +27,22 @@ router.post("/yelpAPI", function(req, res) {
   });
 });
 
+
+router.get("/citibikeAPI", function (req, res) {
+  var options = { method: 'GET',
+   url: 'http://api.citybik.es/citi-bike-nyc.json',
+   headers: 
+    { 'postman-token': 'f07205c3-1c34-4b21-a140-aaab96a8fb34',
+     'cache-control': 'no-cache' } 
+  };
+
+  request(options, function (error, response, body) {
+    if (error) throw new Error(error);
+
+   console.log(body);
+  });
+
+});
+
+
 module.exports = router;

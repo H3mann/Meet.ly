@@ -5,7 +5,9 @@ angular.module('MeetlyApp', [
   'MeetlyApp.form',
   'MeetlyApp.map',
   'MeetlyApp.services',
-  'ui.router'])
+  'ui.router',
+  'MeetlyApp.citibikeService',
+  'MeetlyApp.citibikeCtrl'])
 
 .config(function($stateProvider, $urlRouterProvider) {
     
@@ -19,32 +21,15 @@ angular.module('MeetlyApp', [
     .state('map-view', {
       url: '/map-view',
       templateUrl: 'app/views/map-view.html'
-    });
+    })
+    .state('citibike', {
+      url: '/citibike',
+      templateUrl: 'app/views/citibike.html'
+
+    })
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
+})
