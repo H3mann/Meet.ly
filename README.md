@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ##Deployed version
 App is deployed here: http://ec2-54-162-109-21.compute-1.amazonaws.com/
-Recently there have been issues with the google's geolocator on our deployed version. We're on it!
+Recently there have been issues with Google's geolocator on our deployed version. We're on it!
 
 
 ## What does our app do?
